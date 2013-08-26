@@ -14,6 +14,8 @@ then the system will automatically load your bot and run the service for you.
 
 ### Configuration
 
+The options in the `config.json` file.
+
 * `port`
 
   Which port listened to.
@@ -66,4 +68,4 @@ There's already an example bot in the `bots` folder.
 
 BSD-2-Clause
 
-Jul 2013 ys
+Aug 2013 ys
