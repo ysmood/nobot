@@ -10,7 +10,7 @@ playbill = null
 
 parse = (body) ->
 	# Parse playbill.
-	#
+
 	# weekly: object
 	# 	date: int of current timestamp
 	# 	playbill: array of daily playbill
