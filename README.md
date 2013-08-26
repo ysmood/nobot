@@ -1,6 +1,6 @@
 # Overview
 
-A node web bot service platform.
+A tiny node web bot service platform.
 It supplies a simply interface to generate web bot service.
 Write you bot into the bots folder,
 then the system will automatically load your bot and run the service for you.

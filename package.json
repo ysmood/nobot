@@ -1,7 +1,7 @@
 {
   "name": "nobot",
   "version": "0.0.1",
-  "description": "A node web bot service platform",
+  "description": "A tiny node web bot service platform.",
   "main": "app.js",
   "scripts": {
     "start": "kit/server_ctl.sh start",
