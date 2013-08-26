@@ -56,20 +56,20 @@ get = (done, query) ->
 		grab_url
 		(err, res, body) ->
 			if not err
-				try
-					playbill = parse(body)
-					done(playbill)
-					console.log "Anime playbill grabbed from #{grab_url}."
+				playbill = parse(body)
 
-					# A simple memory cache for the list.
-					# Cache for an hour.
-					setTimeout(
-						-> playbill = null
-						1000 * 60 * 60
-					)
-				catch e
-					console.error e
+				done(playbill)
+
+				console.log "Anime playbill grabbed from #{grab_url}."
+
+				# A simple memory cache for the list.
+				# Cache for an hour.
+				setTimeout(
+					-> playbill = null
+					1000 * 60 * 60
+				)
 			else
+				done(null, err)
 				console.error err
 	)
 

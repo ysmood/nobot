@@ -52,8 +52,13 @@ class Nobot
 			bot = @bots[req.params.bot]
 
 			bot.get(
-				(ret) ->
-					res.send(ret)
+				(ret, err) ->
+					if ret
+						res.send(ret)
+					else
+						res.status(500)
+						res.send(err)
+
 				req.query
 			)
 		)

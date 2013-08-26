@@ -42,11 +42,24 @@ Every bot should be a standard node module,
 here are the required method that a bot should expose.
 There's already an example bot in the `bots` folder.
 
-- `get(done, params)`: function
+- `get(done, params)`: *function*
 
-  - `done(string)`: function, the callback of the get function.
-  - `params`: object, a express.js request.query object.
-              It contains all http query information.
+  - `done(ret, err)`: *function*
+
+     the callback of the get function.
+     If string is null, the server will return the err info as string and
+     set http status to 500.
+
+      - `ret`: *any*
+
+         the return object of the bot.
+
+      - `err`: *any*
+
+         error info.
+
+  - `params`: *object*, a express.js request.query object.
+    It contains all http query information.
 
 
 # License
