@@ -51,6 +51,11 @@ class Nobot
 		@app.get('/:bot', (req, res) =>
 			bot = @bots[req.params.bot]
 
+			if not bot
+				res.status(404)
+				res.send("Sorry, your request bot doesn't exist.")
+				return
+
 			bot.get(
 				(ret, err) ->
 					if ret
