@@ -11,11 +11,11 @@ if [[ $1 = 'start' ]]; then
 	NODE_ENV=production nohup node app.js >> log/app.log 2>&1 &
 
 elif [[ $1 = 'stop' ]]; then
-	pid=$(cat .pid)
+	pid=$(cat log/.pid)
 	kill $pid
 
 elif [[ $1 = 'debug' ]]; then
 	compile
 
-	node --debug=7024 app.js
+	node app.js $2
 fi
