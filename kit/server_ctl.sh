@@ -1,6 +1,5 @@
 compile () {
 	# Compile scripts.
-
 	coffee='node_modules/.bin/coffee'
 	$coffee -c .
 }
