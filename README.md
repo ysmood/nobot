@@ -68,4 +68,4 @@ There's already an example bot in the `bots` folder.
 
 BSD-2-Clause
 
-Jul 2013 ys
+Aug 2013 ys
