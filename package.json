@@ -1,0 +1,27 @@
+{
+  "name": "nobot",
+  "version": "0.0.1",
+  "description": "A node web bot service platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "kit/server_ctl.sh start",
+    "stop": "kit/server_ctl.sh stop",
+    "debug": "kit/server_ctl.sh debug",
+    "test": "test/test.sh"
+  },
+  "keywords": [
+    "node",
+    "web",
+    "bot"
+  ],
+  "author": "Yad Smood",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "underscore": "~1.5.1",
+    "express": "~3.3.5",
+    "coffee-script": "~1.6.3",
+    "memory-cache": "0.0.5",
+    "request": "~2.27.0",
+    "cheerio": "~0.12.1"
+  }
+}

@@ -1,0 +1,12 @@
+# Libs
+node_modules
+bower_components
+
+# Coffeescript Project
+*.js
+
+# App
+*.log
+.pid
+
+*.sublime-*
